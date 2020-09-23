@@ -1,0 +1,90 @@
+@import url('style.css');
+
+
+/* 
+  Header
+*/
+header .container .content ul li a{
+	color: var(--bg-white);
+	border-color: var(--bg-white);
+}
+header .container .content{
+	clip-path: none;
+	background: rgba(0,0,0,0.4);
+	color: var(--bg-white);
+}
+header .container .content .info a{
+	background: var(--bg-white);
+	color: var(--text-black); 
+}
+header .container .content nav > :nth-child(1){
+	display: none;
+}
+header .container .content nav > :nth-child(2){
+	display: block;
+}
+header .container .content .info > :nth-child(1){
+	display: none;
+}
+header .container .content .info > :nth-child(2){
+	display: block;
+}
+header .container .content .info .btn{
+	border: none;
+}
+/*
+Section-One
+*/
+#main-one{
+	align-items: center;
+}
+#main-one > :nth-child(1){
+	flex-direction: column-reverse;
+	align-items: center;
+}
+#main-one > :nth-child(2){
+	flex-direction: column;
+	align-items: center;
+}
+#main-cards{
+	padding: 7em 0px;
+}
+#main-cards .card{
+	text-align: center;
+	align-items: center; 
+}
+#main-cards .card img{
+	padding-bottom: 7em;
+}
+#main-cards .card{
+	width: 82%;
+}
+
+/*
+Section-Three
+*/
+#main-three .content p{
+	padding: 0px 7em 2em 7em;
+}
+/*
+Content-Section
+*/
+#content p{
+	line-height: 2.5rem;
+}
+
+/*
+Footer-Section
+*/
+
+footer .container > :nth-child(1) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .container > :nth-child(1) div{
+	width: 100% !important;
+	text-align: center;
+	padding-bottom: 3em;
+	align-items: center !important;
+}
