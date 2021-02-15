@@ -6,9 +6,9 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./tablet.css" media="(max-width:768px)">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" media="(max-width:500px)" type="text/css" href="mobile.css">
-    <title>Norhant | A technomide Project</title>
+    <link rel="icon" href="favicon.png">
+    <title>Norhant | LOGICADE</title>
 </head>
 <body>
     <header>
@@ -133,12 +133,22 @@
 				</div>
 			</div>
 			<div id="footer-bottom">
-				<h4>2020 Norhart</h4>
+				<h4>2020 Norhart | LOGICADE</h4>
 				<h4>Equal Housing Opportunity</h4>
 			</div>
 		</div>
 	</footer>
-
+  <script>
+    // prevent default
+      document.querySelector('body').addEventListener('click', preventDflt);
+      function preventDflt(e){
+        var tElment = e.target.getAttribute('href');
+        var tElmentP = e.target.parentElement.getAttribute('href');
+        if(tElment == '#' || tElmentP == '#'){
+        e.preventDefault();
+        }
+      }
+  </script>
 	<script src="https://kit.fontawesome.com/b6fdcdf49e.js" crossorigin="anonymous"></script>
 </body>
 </html>

@@ -92,6 +92,7 @@ header .container .content ul{
 }
 header .container .content ul li a{
   margin: 0.75em;
+  cursor: not-allowed;
 }
 header .container .content .info{
   max-width: 18.75rem;
@@ -146,7 +147,8 @@ Section-One
 #main-cards .card a{
 	border: 1px solid var(--text-black);
 	font-size: 1.1rem;
-	padding: 0.7em 2em;
+  padding: 0.7em 2em;
+  cursor: not-allowed;
 }
 
 /*
@@ -177,7 +179,8 @@ Section-Three
 } 
 #main-three .content a{
 	font-size: 1.2rem;
-	padding: 0.7em 2em;
+  padding: 0.7em 2em;
+  cursor: not-allowed;
 }
 #main-three .img-div{
 	padding: 7em 0px;
@@ -200,13 +203,14 @@ Content-Section
 	font-size: 2rem;
 }
 #content a{
-	border-bottom: 0.1em solid var(--text-black);
+  border-bottom: 0.1em solid var(--text-black);
+  cursor: not-allowed;
 }
 /*
 Img-Section
 */
 #Img-Section{
-	padding-top: 6em; 
+	padding-top: 3em; 
 }
 #contents{
 	display: flex;
@@ -214,8 +218,9 @@ Img-Section
 	align-items: center;
 }
 #contents a{
-	padding-top: 6.5em;
-	font-size: 1.5rem;
+	margin-top: 3.5em;
+  font-size: 1.5rem;
+  cursor: not-allowed;
 }
 #Img-Section .img{
 	width: 20rem;
@@ -265,7 +270,8 @@ footer .container > :nth-child(1) .last-div img{
 	width: 6.5rem;
 }
 footer a{
-	color: var(--text-black);
+  color: var(--text-black);
+  cursor: not-allowed;
 }
 #footer-bottom{
 	padding: 4em 0px 0px 0px;
