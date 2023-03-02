@@ -16,6 +16,7 @@ ul{
 }
 html{
   font-family:Raleway,sans-serif;
+  scroll-behavior: smooth;
 }
 /* 
   Universal
@@ -32,6 +33,10 @@ html{
   padding: 0.5rem 1rem !important; 
   border: 2px solid var(--text-black);
 }
+
+.btn:hover{
+border: 2px solid #ff82a7;
+}
 .text-black{
 	color: #000000;
 }
@@ -40,7 +45,13 @@ html{
 }
 .blackBtn{
   color: #fff;
-  background-color: var(--text-black);
+  background-color:  #ff82a7;
+  border: none;
+  border-radius: .2rem;
+}
+.blackBtn:hover{
+	scale: 1.1;
+  transition: .5s;
 }
 .transparentBtn{
   color: #333;
@@ -77,6 +88,12 @@ header .container .content nav{
   justify-content: space-between;
   align-items: center;
 }
+.humburger{
+	display: none;
+}
+.cross{
+	display: none;
+}
 header .container .content nav img{
   width: 6.25rem;
   display: block;
@@ -92,11 +109,21 @@ header .container .content ul{
 }
 header .container .content ul li a{
   margin: 0.75em;
-  cursor: not-allowed;
+  
+}
+header .container .content ul li a:hover{
+  scale: 1.1;
+  color: #ff82a7;
+  transition: .5s;
+  
 }
 header .container .content .info{
   max-width: 18.75rem;
   padding: 6.25em 0px;
+  position: relative;
+}
+.info .btn{
+	position: absolute;
 }
 header .container .content .info > :nth-child(2){
 	display: none;
@@ -145,10 +172,16 @@ Section-One
 	padding-bottom: 2em;
 }
 #main-cards .card a{
-	border: 1px solid var(--text-black);
 	font-size: 1.1rem;
   padding: 0.7em 2em;
-  cursor: not-allowed;
+  background-color: #ff82a7;
+  color: #fff;
+  border-radius: .2rem;
+  
+}
+#main-cards .card a:hover{
+	transition: .5s;
+	scale: 1.1;
 }
 
 /*
@@ -180,7 +213,7 @@ Section-Three
 #main-three .content a{
 	font-size: 1.2rem;
   padding: 0.7em 2em;
-  cursor: not-allowed;
+  
 }
 #main-three .img-div{
 	padding: 7em 0px;
@@ -204,7 +237,7 @@ Content-Section
 }
 #content a{
   border-bottom: 0.1em solid var(--text-black);
-  cursor: not-allowed;
+  
 }
 /*
 Img-Section
@@ -220,7 +253,7 @@ Img-Section
 #contents a{
 	margin-top: 3.5em;
   font-size: 1.5rem;
-  cursor: not-allowed;
+  
 }
 #Img-Section .img{
 	width: 20rem;
@@ -244,7 +277,7 @@ footer .container > :nth-child(1) div:not(.last-div){
 	width: 20%;
 }
 footer .container > :nth-child(1) div:not(.last-div) ul li {
-	margin-bottom: 0.3rem;
+	margin-bottom: 1rem;
 }
 footer .container > :nth-child(1) .last-div{
 	width: 40%;
@@ -271,7 +304,12 @@ footer .container > :nth-child(1) .last-div img{
 }
 footer a{
   color: var(--text-black);
-  cursor: not-allowed;
+  
+}
+footer a:hover{
+  color: #ff82a7;
+  scale: 1.1;
+  
 }
 #footer-bottom{
 	padding: 4em 0px 0px 0px;
@@ -280,3 +318,4 @@ footer a{
 #footer-bottom h4{
 	margin-bottom: 0.5em;
 }
+
